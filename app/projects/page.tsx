@@ -74,7 +74,7 @@ export default function Projects() {
 
             <div className="text-center animate-fade-in">
                 <p className="text-text-secondary mb-6">
-                    Have a project in mind? Let's build it together.
+                    Have a project in mind? Let&apos;s build it together.
                 </p>
                 <Link href="/contact">
                     <Button size="lg" className="bg-primary hover:bg-primary-dark text-white">
