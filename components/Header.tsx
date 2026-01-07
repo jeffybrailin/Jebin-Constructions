@@ -6,7 +6,7 @@ import { ThemeToggle } from './ThemeToggle'
 import { Button } from './ui/Button'
 
 export const Header: React.FC = () => {
-  const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/1XcZcjusuFGWNHpQWzybb9RXcfO4-qEeLQfxfbzhrBO4/edit'
+  const GOOGLE_FORM_URL = 'https://forms.gle/h2XQahLxJzywDXf47'
 
   return (
     <header className="sticky top-0 z-50 bg-bg-secondary border-b border-gray-200 dark:border-gray-700 shadow-elevation-1 backdrop-blur-sm bg-opacity-95">

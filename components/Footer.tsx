@@ -3,7 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/1XcZcjusuFGWNHpQWzybb9RXcfO4-qEeLQfxfbzhrBO4/edit'
+const GOOGLE_FORM_URL = 'https://forms.gle/h2XQahLxJzywDXf47'
 
 export const Footer: React.FC = () => {
   return (

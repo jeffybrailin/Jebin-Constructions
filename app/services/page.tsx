@@ -3,7 +3,7 @@
 import { Card } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 
-const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSf_WiuMOuI5fPmxLBpn3NwHBpOL9awJd5RuP9CwMUJJh08O_w/viewform?usp=dialog'
+const GOOGLE_FORM_URL = 'https://forms.gle/h2XQahLxJzywDXf47'
 
 const services = [
   {
