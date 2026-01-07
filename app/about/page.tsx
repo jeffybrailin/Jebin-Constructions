@@ -87,7 +87,7 @@ export default function About() {
           </h3>
           <p className="text-text-secondary leading-relaxed mb-4">
             Founded in 2022, Jebin Constructions began as a small local contractor with a big vision.
-            Over the years, we've grown into a trusted name in the construction industry, completing
+            Over the years, we&apos;ve grown into a trusted name in the construction industry, completing
             hundreds of projects ranging from residential buildings to commercial complexes.
           </p>
           <p className="text-text-secondary leading-relaxed">
