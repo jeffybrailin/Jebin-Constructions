@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { ThemeToggle } from './ThemeToggle'
 import { Button } from './ui/Button'
 
@@ -13,7 +14,13 @@ export const Header: React.FC = () => {
       <nav className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-8">
           <Link href="/" className="text-2xl font-heading font-bold text-primary flex items-center gap-2">
-            <span className="text-3xl">🏗️</span>
+            <Image
+              src="/logo.png"
+              alt="Jebin Constructions Logo"
+              width={40}
+              height={40}
+              className="rounded-full"
+            />
             <span>Jebin Constructions</span>
           </Link>
           <div className="hidden md:flex items-center gap-6">
@@ -22,6 +29,9 @@ export const Header: React.FC = () => {
             </Link>
             <Link href="/about" className="text-text-primary hover:text-primary transition-colors font-medium">
               About
+            </Link>
+            <Link href="/projects" className="text-text-primary hover:text-primary transition-colors font-medium">
+              Projects
             </Link>
             <Link href="/services" className="text-text-primary hover:text-primary transition-colors font-medium">
               Services

@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const GOOGLE_FORM_URL = 'https://forms.gle/h2XQahLxJzywDXf47'
 
@@ -12,7 +13,13 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <h3 className="font-heading font-semibold mb-4 text-text-primary flex items-center gap-2">
-              <span className="text-2xl">🏗️</span>
+              <Image
+                src="/logo.png"
+                alt="Jebin Constructions Logo"
+                width={32}
+                height={32}
+                className="rounded-full"
+              />
               Jebin Constructions
             </h3>
             <p className="text-text-secondary text-sm">
