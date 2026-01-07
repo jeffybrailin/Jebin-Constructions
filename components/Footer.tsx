@@ -3,7 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSf_WiuMOuI5fPmxLBpn3NwHBpOL9awJd5RuP9CwMUJJh08O_w/viewform?usp=dialog'
+const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/1XcZcjusuFGWNHpQWzybb9RXcfO4-qEeLQfxfbzhrBO4/edit'
 
 export const Footer: React.FC = () => {
   return (
@@ -16,8 +16,18 @@ export const Footer: React.FC = () => {
               Jebin Constructions
             </h3>
             <p className="text-text-secondary text-sm">
-              Building excellence since 2009. Modern construction solutions for tomorrow.
+              Building excellence since 2022. Modern construction solutions for tomorrow.
             </p>
+            <div className="mt-6">
+              <h4 className="font-semibold mb-2 text-text-primary">Our Projects</h4>
+              <ul className="space-y-1 text-sm text-text-secondary">
+                <li>
+                  <Link href="/projects" className="hover:text-primary transition-colors">
+                    View All Projects
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
           <div>
             <h4 className="font-semibold mb-4 text-text-primary">Quick Links</h4>
@@ -42,6 +52,11 @@ export const Footer: React.FC = () => {
                   Contact
                 </Link>
               </li>
+              <li>
+                <Link href="/terms" className="text-text-secondary hover:text-primary transition-colors">
+                  Terms & Conditions
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
@@ -51,6 +66,11 @@ export const Footer: React.FC = () => {
               <li>Residential Building</li>
               <li>Renovation & Remodeling</li>
               <li>Infrastructure Projects</li>
+              <li>
+                <Link href="/services/testings" className="hover:text-primary transition-colors">
+                  Testings
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
@@ -69,7 +89,7 @@ export const Footer: React.FC = () => {
                 href={GOOGLE_FORM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors text-sm font-medium"
+                className="inline-block px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors text-sm font-medium font-heading"
               >
                 Register Now
               </a>
@@ -77,7 +97,7 @@ export const Footer: React.FC = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 text-center text-sm text-text-secondary">
-          © 2024 Jebin Constructions. All rights reserved.
+          © 2026 Jebin Constructions. All rights reserved.
         </div>
       </div>
     </footer>

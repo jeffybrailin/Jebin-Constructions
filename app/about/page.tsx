@@ -11,7 +11,7 @@ export default function About() {
             About Jebin Constructions
           </h1>
           <p className="text-xl text-text-secondary leading-relaxed">
-            Building excellence since 2009
+            Building excellence since 2022
           </p>
         </div>
 
@@ -86,7 +86,7 @@ export default function About() {
             Our Story
           </h3>
           <p className="text-text-secondary leading-relaxed mb-4">
-            Founded in 2009, Jebin Constructions began as a small local contractor with a big vision.
+            Founded in 2022, Jebin Constructions began as a small local contractor with a big vision.
             Over the years, we've grown into a trusted name in the construction industry, completing
             hundreds of projects ranging from residential buildings to commercial complexes.
           </p>

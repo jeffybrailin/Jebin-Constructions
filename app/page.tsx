@@ -5,7 +5,7 @@ import { ConstructionAnimation } from '@/components/ConstructionAnimation'
 import { Card } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 
-const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSf_WiuMOuI5fPmxLBpn3NwHBpOL9awJd5RuP9CwMUJJh08O_w/viewform?usp=dialog'
+const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/1XcZcjusuFGWNHpQWzybb9RXcfO4-qEeLQfxfbzhrBO4/edit'
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
               Modern Construction Solutions for Tomorrow
             </p>
             <a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-primary hover:bg-primary-dark text-white shadow-elevation-4">
+              <Button size="lg" className="bg-primary hover:bg-primary-dark text-white shadow-elevation-4 font-heading">
                 Register Now
               </Button>
             </a>
@@ -64,14 +64,14 @@ export default function Home() {
             <div className="mb-4 flex justify-center">
               <Image
                 src="/feature-fast.png"
-                alt="Fast Delivery"
+                alt="Efficient Project Cycle"
                 width={200}
                 height={200}
                 className="object-cover rounded-lg h-48 w-full"
               />
             </div>
             <h3 className="text-xl font-heading font-semibold mb-2 text-text-primary">
-              Fast Delivery
+              Efficient Project Cycle
             </h3>
             <p className="text-text-secondary">
               Efficient project management ensuring timely completion.
@@ -118,20 +118,20 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="animate-slide-up">
-              <div className="text-4xl font-bold text-primary mb-2">500+</div>
+              <div className="text-4xl font-bold text-primary mb-2">8+</div>
               <div className="text-text-secondary">Projects Completed</div>
             </div>
             <div className="animate-slide-up" style={{ animationDelay: '0.1s' }}>
-              <div className="text-4xl font-bold text-primary mb-2">15+</div>
+              <div className="text-4xl font-bold text-primary mb-2">2+</div>
               <div className="text-text-secondary">Years Experience</div>
             </div>
             <div className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
-              <div className="text-4xl font-bold text-primary mb-2">1000+</div>
+              <div className="text-4xl font-bold text-primary mb-2">10+</div>
               <div className="text-text-secondary">Happy Clients</div>
             </div>
             <div className="animate-slide-up" style={{ animationDelay: '0.3s' }}>
-              <div className="text-4xl font-bold text-primary mb-2">50+</div>
-              <div className="text-text-secondary">Expert Team</div>
+              <div className="text-4xl font-bold text-primary mb-2">10+</div>
+              <div className="text-text-secondary">Testings</div>
             </div>
           </div>
         </div>

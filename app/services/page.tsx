@@ -36,6 +36,12 @@ const services = [
     title: 'Institutional Buildings',
     description: 'Schools, hospitals, and government buildings constructed with care and precision.',
   },
+  {
+    icon: '🧪',
+    title: 'Material Testing',
+    description: 'Comprehensive on-site material verification including concrete, cement, and steel quality checks.',
+    href: '/services/testings'
+  },
 ]
 
 export default function Services() {
@@ -51,21 +57,51 @@ export default function Services() {
       </section>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-        {services.map((service, index) => (
-          <Card
-            key={service.title}
-            hover
-            elevation={2}
-            className="p-6 animate-slide-up"
-            style={{ animationDelay: `${index * 0.1}s` }}
-          >
-            <div className="text-6xl mb-4">{service.icon}</div>
-            <h3 className="text-xl font-heading font-semibold mb-3 text-text-primary">
-              {service.title}
-            </h3>
-            <p className="text-text-secondary mb-6">{service.description}</p>
-          </Card>
-        ))}
+        {services.map((service, index) => {
+          const CardContent = () => (
+            <>
+              <div className="text-6xl mb-4">{service.icon}</div>
+              <h3 className="text-xl font-heading font-semibold mb-3 text-text-primary">
+                {service.title}
+              </h3>
+              <p className="text-text-secondary mb-6">{service.description}</p>
+              {/* @ts-ignore */}
+              {service.href && (
+                <div className="text-primary font-medium flex items-center gap-2 group-hover:gap-3 transition-all">
+                  View Details <span>→</span>
+                </div>
+              )}
+            </>
+          )
+
+          /* @ts-ignore */
+          if (service.href) {
+            return (
+              <a key={service.title} href={service.href} className="block group">
+                <Card
+                  hover
+                  elevation={2}
+                  className="p-6 h-full animate-slide-up transition-transform hover:-translate-y-1"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <CardContent />
+                </Card>
+              </a>
+            )
+          }
+
+          return (
+            <Card
+              key={service.title}
+              hover
+              elevation={2}
+              className="p-6 h-full animate-slide-up"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
+              <CardContent />
+            </Card>
+          )
+        })}
       </div>
 
       <section className="bg-bg-secondary rounded-lg p-12 text-center animate-fade-in">
