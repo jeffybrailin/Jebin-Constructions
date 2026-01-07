@@ -141,4 +141,4 @@ MIT License
 
 ## Support
 
-For support, contact info@jebinconstructions.com or visit the contact page.
+For support, contact jebinconstructions.com or visit the contact page.
