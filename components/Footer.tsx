@@ -3,7 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform' // Replace with your Google Form URL
+const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSf_WiuMOuI5fPmxLBpn3NwHBpOL9awJd5RuP9CwMUJJh08O_w/viewform?usp=dialog'
 
 export const Footer: React.FC = () => {
   return (
@@ -54,18 +54,26 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold mb-4 text-text-primary">Get Started</h4>
-            <p className="text-text-secondary text-sm mb-4">
-              Ready to start your construction project?
-            </p>
-            <a
-              href={GOOGLE_FORM_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors text-sm font-medium"
-            >
-              Register Now
-            </a>
+            <h4 className="font-semibold mb-4 text-text-primary">Contact Us</h4>
+            <div className="space-y-4 text-sm text-text-secondary">
+              <div>
+                <p className="font-medium text-text-primary">Mobile</p>
+                <p>+91 94446 40146</p>
+                <p>+91 91592 92954</p>
+              </div>
+              <div>
+                <p className="font-medium text-text-primary">Email</p>
+                <p>jebinconstruction@gmail.com</p>
+              </div>
+              <a
+                href={GOOGLE_FORM_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary-dark transition-colors text-sm font-medium"
+              >
+                Register Now
+              </a>
+            </div>
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 text-center text-sm text-text-secondary">

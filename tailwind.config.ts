@@ -11,9 +11,9 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#3B82F6',
-          light: '#60A5FA',
-          dark: '#2563EB',
+          DEFAULT: '#CC5500', // Burnt Orange
+          light: '#E07A2E',
+          dark: '#A04000',
         },
         secondary: {
           DEFAULT: '#34D399',
@@ -27,8 +27,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['Roboto', 'sans-serif'],
-        heading: ['Poppins', 'sans-serif'],
+        sans: ['var(--font-dm-sans)', 'sans-serif'],
+        heading: ['var(--font-playfair)', 'serif'],
         mono: ['Roboto Mono', 'monospace'],
       },
       fontSize: {

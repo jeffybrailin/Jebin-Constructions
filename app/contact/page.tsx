@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/Button'
 import { Input } from '@/components/ui/Input'
 import { useState } from 'react'
 
-const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform' // Replace with your Google Form URL
+const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSf_WiuMOuI5fPmxLBpn3NwHBpOL9awJd5RuP9CwMUJJh08O_w/viewform?usp=dialog'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -97,17 +97,18 @@ export default function Contact() {
           <Card elevation={2} className="text-center p-6">
             <div className="text-4xl mb-3">📧</div>
             <h3 className="font-semibold mb-2 text-text-primary">Email</h3>
-            <p className="text-text-secondary text-sm">info@jebinconstructions.com</p>
+            <p className="text-text-secondary text-sm">jebinconstruction@gmail.com</p>
           </Card>
           <Card elevation={2} className="text-center p-6">
             <div className="text-4xl mb-3">📞</div>
             <h3 className="font-semibold mb-2 text-text-primary">Phone</h3>
-            <p className="text-text-secondary text-sm">+1 (555) 123-4567</p>
+            <p className="text-text-secondary text-sm">9444640146</p>
+            <p className="text-text-secondary text-sm">9159292954</p>
           </Card>
           <Card elevation={2} className="text-center p-6">
             <div className="text-4xl mb-3">📍</div>
             <h3 className="font-semibold mb-2 text-text-primary">Address</h3>
-            <p className="text-text-secondary text-sm">123 Construction Ave, City</p>
+            <p className="text-text-secondary text-sm">Nagercoil, Kanyakumari Dist.</p>
           </Card>
         </div>
 

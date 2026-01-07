@@ -1,10 +1,11 @@
 'use client'
 
+import Image from 'next/image'
 import { ConstructionAnimation } from '@/components/ConstructionAnimation'
 import { Card } from '@/components/ui/Card'
 import { Button } from '@/components/ui/Button'
 
-const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform' // Replace with your Google Form URL
+const GOOGLE_FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSf_WiuMOuI5fPmxLBpn3NwHBpOL9awJd5RuP9CwMUJJh08O_w/viewform?usp=dialog'
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
         <ConstructionAnimation />
         <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
           <div className="text-center text-white px-4 animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-heading font-bold mb-4 drop-shadow-lg">
+            <h1 className="text-3xl md:text-4xl font-heading font-bold mb-4 drop-shadow-lg">
               Building Dreams
             </h1>
             <p className="text-xl md:text-2xl mb-8 drop-shadow-md">
@@ -32,7 +33,7 @@ export default function Home() {
       {/* Features Section */}
       <section className="container mx-auto px-4 py-16">
         <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-4xl font-heading font-bold mb-4 text-text-primary">
+          <h2 className="text-3xl font-heading font-bold mb-4 text-text-primary">
             Why Choose Jebin Constructions?
           </h2>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto">
@@ -42,7 +43,15 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           <Card hover elevation={2} className="text-center animate-slide-up">
-            <div className="text-6xl mb-4">🏗️</div>
+            <div className="mb-4 flex justify-center">
+              <Image
+                src="/feature-modern.jpg"
+                alt="Modern Architecture"
+                width={200}
+                height={200}
+                className="object-cover rounded-lg h-48 w-full"
+              />
+            </div>
             <h3 className="text-xl font-heading font-semibold mb-2 text-text-primary">
               Modern Architecture
             </h3>
@@ -52,7 +61,15 @@ export default function Home() {
           </Card>
 
           <Card hover elevation={2} className="text-center animate-slide-up" style={{ animationDelay: '0.1s' }}>
-            <div className="text-6xl mb-4">⚡</div>
+            <div className="mb-4 flex justify-center">
+              <Image
+                src="/feature-fast.png"
+                alt="Fast Delivery"
+                width={200}
+                height={200}
+                className="object-cover rounded-lg h-48 w-full"
+              />
+            </div>
             <h3 className="text-xl font-heading font-semibold mb-2 text-text-primary">
               Fast Delivery
             </h3>
@@ -62,7 +79,15 @@ export default function Home() {
           </Card>
 
           <Card hover elevation={2} className="text-center animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            <div className="text-6xl mb-4">✅</div>
+            <div className="mb-4 flex justify-center">
+              <Image
+                src="/feature-quality.png"
+                alt="Quality Assured"
+                width={200}
+                height={200}
+                className="object-cover rounded-lg h-48 w-full"
+              />
+            </div>
             <h3 className="text-xl font-heading font-semibold mb-2 text-text-primary">
               Quality Assured
             </h3>
