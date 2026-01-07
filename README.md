@@ -11,16 +11,16 @@ A modern, responsive website for Jebin Constructions featuring construction site
 - **Smooth Animations**: CSS animations for building construction, crane movement, and workers
 
 ### Pages
-- 🏠 **Home**: Hero section with construction animation, features, stats, and registration CTA
-- 📄 **About**: Company mission, vision, values, and story
-- 🛠️ **Services**: Showcase of construction services offered
-- 📧 **Contact**: Contact form and company information
+-  **Home**: Hero section with construction animation, features, stats, and registration CTA
+-  **About**: Company mission, vision, values, and story
+-  **Services**: Showcase of construction services offered
+-  **Contact**: Contact form and company information
 
 ### Key Features
-- ✅ **Register Button**: Links to Google Form for client registration (no backend needed)
-- ✅ **Theme Toggle**: Dark/light mode with persistent preference
-- ✅ **Interactive Elements**: Hover effects, animations, and smooth transitions
-- ✅ **Mobile-First**: Optimized for all screen sizes
+-  **Register Button**: Links to Google Form for client registration (no backend needed)
+-  **Theme Toggle**: Dark/light mode with persistent preference
+-  **Interactive Elements**: Hover effects, animations, and smooth transitions
+-  **Mobile-First**: Optimized for all screen sizes
 
 ## Getting Started
 
