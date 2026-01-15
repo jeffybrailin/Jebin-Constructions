@@ -99,6 +99,9 @@ export default function Home() {
 
         {/* CTA Section */}
         <div className="bg-bg-secondary rounded-lg p-12 text-center animate-fade-in">
+          <h2 className="text-2xl md:text-3xl font-heading font-bold mb-2 text-primary">
+            Our Services Across Tamilnadu
+          </h2>
           <h2 className="text-3xl font-heading font-bold mb-4 text-text-primary">
             Ready to Start Your Project?
           </h2>
