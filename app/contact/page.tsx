@@ -97,7 +97,7 @@ export default function Contact() {
           <Card elevation={2} className="text-center p-6">
             <div className="text-4xl mb-3">📧</div>
             <h3 className="font-semibold mb-2 text-text-primary">Email</h3>
-            <p className="text-text-secondary text-sm">jebinconstruction@gmail.com</p>
+            <p className="text-text-secondary text-sm">jebinconstructions@gmail.com</p>
           </Card>
           <Card elevation={2} className="text-center p-6">
             <div className="text-4xl mb-3">📞</div>

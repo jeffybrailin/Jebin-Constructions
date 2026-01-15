@@ -90,7 +90,7 @@ export const Footer: React.FC = () => {
               </div>
               <div>
                 <p className="font-medium text-text-primary">Email</p>
-                <p>jebinconstruction@gmail.com</p>
+                <p>jebinconstructions@gmail.com</p>
               </div>
               <a
                 href={GOOGLE_FORM_URL}
