@@ -120,27 +120,8 @@ export default function Home() {
       {/* Team Section */}
       <section className="container mx-auto px-4 py-16">
         {/* CEO Section */}
+        {/* Founder Section - Displaying First */}
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 justify-center">
-          <div className="w-64 h-64 relative flex-shrink-0 animate-slide-up">
-            <Image
-              src="/jebin-raj.jpg"
-              alt="Jebin Raj J - CEO"
-              fill
-              className="object-cover rounded-full border-4 border-primary shadow-xl"
-            />
-          </div>
-          <div className="text-center md:text-left animate-slide-up" style={{ animationDelay: '0.1s' }}>
-            <h3 className="text-3xl font-heading font-bold text-text-primary mb-2">Jebin Raj J</h3>
-            <p className="text-xl text-primary font-semibold mb-2">Chief Executive Officer (CEO)</p>
-            <p className="text-text-secondary text-lg">Jebin Constructions</p>
-          </div>
-        </div>
-
-        {/* Separator */}
-        <div className="w-full max-w-4xl mx-auto h-px bg-gray-200 dark:bg-gray-700 my-16" />
-
-        {/* Founder Section */}
-        <div className="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-16 justify-center">
           <div className="w-64 h-64 relative flex-shrink-0 animate-slide-up">
             <Image
               src="/justin-c.png"
@@ -149,9 +130,29 @@ export default function Home() {
               className="object-cover rounded-full border-4 border-primary shadow-xl"
             />
           </div>
-          <div className="text-center md:text-right animate-slide-up" style={{ animationDelay: '0.1s' }}>
+          <div className="text-center md:text-left animate-slide-up" style={{ animationDelay: '0.1s' }}>
             <h3 className="text-3xl font-heading font-bold text-text-primary mb-2">Justin C</h3>
             <p className="text-xl text-primary font-semibold mb-2">Founder</p>
+            <p className="text-text-secondary text-lg">Jebin Constructions</p>
+          </div>
+        </div>
+
+        {/* Separator */}
+        <div className="w-full max-w-4xl mx-auto h-px bg-gray-200 dark:bg-gray-700 my-16" />
+
+        {/* CEO Section - Displaying Second */}
+        <div className="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-16 justify-center">
+          <div className="w-64 h-64 relative flex-shrink-0 animate-slide-up">
+            <Image
+              src="/jebin-raj.jpg"
+              alt="Jebin Raj J - CEO"
+              fill
+              className="object-cover rounded-full border-4 border-primary shadow-xl"
+            />
+          </div>
+          <div className="text-center md:text-right animate-slide-up" style={{ animationDelay: '0.1s' }}>
+            <h3 className="text-3xl font-heading font-bold text-text-primary mb-2">Jebin Raj J</h3>
+            <p className="text-xl text-primary font-semibold mb-2">Chief Executive Officer (CEO)</p>
             <p className="text-text-secondary text-lg">Jebin Constructions</p>
           </div>
         </div>
