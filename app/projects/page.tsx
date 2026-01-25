@@ -70,6 +70,32 @@ export default function Projects() {
                         </div>
                     </div>
                 </Card>
+
+                <Card hover elevation={2} className="p-0 overflow-hidden animate-slide-up group" style={{ animationDelay: '0.2s' }}>
+                    <div className="relative h-[500px] overflow-hidden bg-gray-100">
+                        <Image
+                            src="/kanyakumari-site.jpg"
+                            alt="Ongoing site plan"
+                            fill
+                            className="object-contain transition-transform duration-700 group-hover:scale-105"
+                        />
+                    </div>
+                    <div className="p-6">
+                        <h3 className="text-xl font-heading font-semibold mb-2 text-text-primary">
+                            Ongoing site plan
+                        </h3>
+                        <p className="text-sm font-medium text-primary mb-3">
+                            📍 Kanyakumari
+                        </p>
+                        <p className="text-text-secondary mb-4 text-sm">
+                            Upcoming residential project in a prime location.
+                        </p>
+                        <div className="flex gap-2 text-sm text-text-secondary">
+                            <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">Residential</span>
+                            <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full">Ongoing</span>
+                        </div>
+                    </div>
+                </Card>
             </div>
 
             <div className="text-center animate-fade-in">
