@@ -108,7 +108,7 @@ export default function Projects() {
                     </div>
                     <div className="p-6">
                         <h3 className="text-xl font-heading font-semibold mb-2 text-text-primary">
-                            JC Kanyakumari Residence
+                            Residence
                         </h3>
                         <p className="text-sm font-medium text-primary mb-3">
                             📍 Kanyakumari
