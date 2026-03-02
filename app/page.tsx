@@ -132,12 +132,7 @@ export default function Home() {
       </section>
 
       {/* ── Team Section ── */}
-      <section className="container mx-auto px-4 py-20">
-        <div className="text-center mb-14">
-          <p className="text-primary text-sm font-semibold tracking-widest uppercase mb-3">Leadership</p>
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-text-primary">Meet the Team</h2>
-        </div>
-
+      <section className="container mx-auto px-4 py-16">
         <div className="flex flex-col md:flex-row gap-12 justify-center items-center">
           {/* Founder */}
           <div className="text-center group">

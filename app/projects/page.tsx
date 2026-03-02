@@ -68,16 +68,17 @@ export default function Projects() {
                             style={{ animationDelay: `${i * 0.1}s` }}
                         >
                             {/* Image with hover overlay */}
-                            <div className="relative h-60 sm:h-72 overflow-hidden">
+                            <div className="relative w-full overflow-hidden bg-gray-100 dark:bg-gray-800">
                                 <Image
                                     src={p.img}
                                     alt={p.title}
-                                    fill
-                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                    width={800}
+                                    height={600}
+                                    className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                                {/* Overlay title on hover */}
-                                <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                                {/* Overlay location on hover */}
+                                <div className="absolute bottom-3 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <p className="text-white/80 text-xs tracking-widest uppercase font-medium">{p.location}</p>
                                 </div>
                             </div>
