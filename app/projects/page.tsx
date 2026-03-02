@@ -1,139 +1,121 @@
 'use client'
 
-import { Card } from '@/components/ui/Card'
-import { Button } from '@/components/ui/Button'
-import Link from 'next/link'
 import Image from 'next/image'
+import Link from 'next/link'
+
+const projects = [
+    {
+        img: '/jc-verkilambi-residence-full.jpg',
+        title: 'JC Verkilambi Residence',
+        location: 'Verkilambi, Kanniyakumari District',
+        desc: 'A modern residential building constructed with quality materials, strong RCC structure, and professional site supervision.',
+        type: 'Residential',
+        status: 'Completed',
+    },
+    {
+        img: '/jc-mekkamandapam-residence.jpg',
+        title: 'JC Mekkamandapam Residence',
+        location: 'Mekkamandapam, Kanniyakumari District',
+        desc: 'A residential project executed with strong RCC structure, quality finishes, and professional site supervision.',
+        type: 'Residential',
+        status: 'Completed',
+    },
+    {
+        img: '/kanyakumari-site.jpg',
+        title: 'Ongoing Site Plan',
+        location: 'Kanyakumari',
+        desc: 'Upcoming residential project in a prime location, currently in active development.',
+        type: 'Residential',
+        status: 'Ongoing',
+    },
+    {
+        img: '/jc-kanyakumari-completed.jpg',
+        title: 'Kanyakumari Residence',
+        location: 'Kanyakumari',
+        desc: 'A beautifully completed residential project showcasing modern lighting and architectural excellence.',
+        type: 'Residential',
+        status: 'Completed',
+    },
+]
+
+const statusStyle: Record<string, string> = {
+    Completed: 'bg-emerald-500/15 text-emerald-400 border border-emerald-500/30',
+    Ongoing: 'bg-amber-500/15 text-amber-400 border border-amber-500/30',
+}
 
 export default function Projects() {
     return (
-        <div className="container mx-auto px-4 py-12">
-            <section className="text-center mb-16 animate-fade-in">
-                <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6 text-text-primary">
-                    Our Projects
-                </h1>
-                <p className="text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed">
-                    Showcasing our excellence in construction through completed works and ongoing developments.
-                </p>
+        <div className="w-full">
+
+            {/* ── Page Hero ── */}
+            <section className="section-hero text-center">
+                <div className="container mx-auto relative z-10">
+                    <p className="text-primary text-sm font-semibold tracking-widest uppercase mb-4">Our Portfolio</p>
+                    <h1 className="text-4xl md:text-5xl font-heading font-bold text-white mb-4">Our Projects</h1>
+                    <p className="text-white/60 text-lg max-w-2xl mx-auto">
+                        Showcasing our excellence in construction — from completed residences to ongoing developments.
+                    </p>
+                </div>
             </section>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                <Card hover elevation={2} className="p-0 overflow-hidden animate-slide-up group">
-                    <div className="relative h-56 sm:h-80 md:h-[500px] overflow-hidden bg-gray-100">
-                        <Image
-                            src="/jc-verkilambi-residence-full.jpg"
-                            alt="JC Verkilambi Residence"
-                            fill
-                            className="object-contain transition-transform duration-700 group-hover:scale-105"
-                        />
-                    </div>
-                    <div className="p-6">
-                        <h3 className="text-xl font-heading font-semibold mb-2 text-text-primary">
-                            JC Verkilambi Residence
-                        </h3>
-                        <p className="text-sm font-medium text-primary mb-3">
-                            📍 Verkilambi, Kanniyakumari District
-                        </p>
-                        <p className="text-text-secondary mb-4 text-sm">
-                            A modern residential building constructed with quality materials, strong RCC structure, and professional site supervision to ensure durability and client satisfaction.
-                        </p>
-                        <div className="flex gap-2 text-sm text-text-secondary">
-                            <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">Residential</span>
-                            <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full">Completed</span>
-                        </div>
-                    </div>
-                </Card>
+            {/* ── Projects Grid ── */}
+            <section className="container mx-auto px-4 py-20">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {projects.map((p, i) => (
+                        <div
+                            key={p.title}
+                            className="bg-bg-secondary rounded-2xl overflow-hidden shadow-elevation-2 group hover:-translate-y-1 transition-all duration-300"
+                            style={{ animationDelay: `${i * 0.1}s` }}
+                        >
+                            {/* Image with hover overlay */}
+                            <div className="relative h-60 sm:h-72 overflow-hidden">
+                                <Image
+                                    src={p.img}
+                                    alt={p.title}
+                                    fill
+                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                                {/* Overlay title on hover */}
+                                <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <p className="text-white/80 text-xs tracking-widest uppercase font-medium">{p.location}</p>
+                                </div>
+                            </div>
 
-                {/* Placeholder cards for now */}
-                <Card hover elevation={2} className="p-0 overflow-hidden animate-slide-up group" style={{ animationDelay: '0.1s' }}>
-                    <div className="relative h-56 sm:h-80 md:h-[500px] overflow-hidden bg-gray-100">
-                        <Image
-                            src="/jc-mekkamandapam-residence.jpg"
-                            alt="JC Mekkamandapam Residence"
-                            fill
-                            className="object-contain transition-transform duration-700 group-hover:scale-105"
-                        />
-                    </div>
-                    <div className="p-6">
-                        <h3 className="text-xl font-heading font-semibold mb-2 text-text-primary">
-                            JC Mekkamandapam Residence
-                        </h3>
-                        <p className="text-sm font-medium text-primary mb-3">
-                            📍 Mekkamandapam, Kanniyakumari District
-                        </p>
-                        <p className="text-text-secondary mb-4 text-sm">
-                            A residential project executed with strong RCC structure, quality finishes, and professional site supervision to ensure safety and durability.
-                        </p>
-                        <div className="flex gap-2 text-sm text-text-secondary">
-                            <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">Residential</span>
-                            <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full">Completed</span>
+                            {/* Card body */}
+                            <div className="p-6">
+                                <div className="flex items-start justify-between gap-3 mb-3">
+                                    <h3 className="text-xl font-heading font-bold text-text-primary leading-snug">{p.title}</h3>
+                                    <span className={`text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap ${statusStyle[p.status]}`}>
+                                        {p.status}
+                                    </span>
+                                </div>
+                                <div className="flex items-center gap-1.5 text-primary text-sm font-medium mb-3">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-4 h-4 flex-shrink-0">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" />
+                                    </svg>
+                                    {p.location}
+                                </div>
+                                <p className="text-text-secondary text-sm leading-relaxed mb-4">{p.desc}</p>
+                                <span className="inline-block bg-primary/10 text-primary text-xs font-semibold px-3 py-1 rounded-full">
+                                    {p.type}
+                                </span>
+                            </div>
                         </div>
-                    </div>
-                </Card>
+                    ))}
+                </div>
+            </section>
 
-                <Card hover elevation={2} className="p-0 overflow-hidden animate-slide-up group" style={{ animationDelay: '0.2s' }}>
-                    <div className="relative h-56 sm:h-80 md:h-[500px] overflow-hidden bg-gray-100">
-                        <Image
-                            src="/kanyakumari-site.jpg"
-                            alt="Ongoing site plan"
-                            fill
-                            className="object-contain transition-transform duration-700 group-hover:scale-105"
-                        />
-                    </div>
-                    <div className="p-6">
-                        <h3 className="text-xl font-heading font-semibold mb-2 text-text-primary">
-                            Ongoing site plan
-                        </h3>
-                        <p className="text-sm font-medium text-primary mb-3">
-                            📍 Kanyakumari
-                        </p>
-                        <p className="text-text-secondary mb-4 text-sm">
-                            Upcoming residential project in a prime location.
-                        </p>
-                        <div className="flex gap-2 text-sm text-text-secondary">
-                            <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">Residential</span>
-                            <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full">Ongoing</span>
-                        </div>
-                    </div>
-                </Card>
-
-                <Card hover elevation={2} className="p-0 overflow-hidden animate-slide-up group" style={{ animationDelay: '0.3s' }}>
-                    <div className="relative h-56 sm:h-80 md:h-[500px] overflow-hidden bg-gray-100">
-                        <Image
-                            src="/jc-kanyakumari-completed.jpg"
-                            alt="JC Kanyakumari Residence"
-                            fill
-                            className="object-contain transition-transform duration-700 group-hover:scale-105"
-                        />
-                    </div>
-                    <div className="p-6">
-                        <h3 className="text-xl font-heading font-semibold mb-2 text-text-primary">
-                            Residence
-                        </h3>
-                        <p className="text-sm font-medium text-primary mb-3">
-                            📍 Kanyakumari
-                        </p>
-                        <p className="text-text-secondary mb-4 text-sm">
-                            A beautifully completed residential project showcasing modern lighting and architectural excellence.
-                        </p>
-                        <div className="flex gap-2 text-sm text-text-secondary">
-                            <span className="bg-primary/10 text-primary px-3 py-1 rounded-full">Residential</span>
-                            <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full">Completed</span>
-                        </div>
-                    </div>
-                </Card>
-            </div>
-
-            <div className="text-center animate-fade-in">
-                <p className="text-text-secondary mb-6">
-                    Have a project in mind? Let&apos;s build it together.
-                </p>
+            {/* ── CTA ── */}
+            <section className="bg-gradient-to-r from-[#0f172a] via-[#1e293b] to-[#0f172a] py-16 px-4 text-center">
+                <p className="text-white/60 mb-3 max-w-xl mx-auto">Have a project in mind? Let&apos;s build it together.</p>
                 <Link href="/contact">
-                    <Button size="lg" className="bg-primary hover:bg-primary-dark text-white">
-                        Contact Us
-                    </Button>
+                    <button className="px-8 py-4 bg-primary hover:bg-primary-dark text-white font-bold rounded-lg transition-all duration-300 hover:scale-105 font-heading">
+                        Contact Us ↗
+                    </button>
                 </Link>
-            </div>
+            </section>
+
         </div>
     )
 }
