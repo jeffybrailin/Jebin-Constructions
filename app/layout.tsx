@@ -1,16 +1,9 @@
 import type { Metadata } from 'next'
-import { Playfair_Display, DM_Sans } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/ThemeProvider'
 import { Header } from '@/components/Header'
 import { Footer } from '@/components/Footer'
 import { ErrorBoundary } from '@/components/ui/ErrorBoundary'
-
-const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans' })
-const playfair = Playfair_Display({
-  subsets: ['latin'],
-  variable: '--font-playfair'
-})
 
 export const metadata: Metadata = {
   title: 'Jebin Constructions - Modern Building Solutions',
@@ -24,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${dmSans.variable} ${playfair.variable}`}>
+      <body>
         <ErrorBoundary>
           <ThemeProvider>
             <div className="min-h-screen flex flex-col font-sans">
@@ -38,4 +31,3 @@ export default function RootLayout({
     </html>
   )
 }
-
