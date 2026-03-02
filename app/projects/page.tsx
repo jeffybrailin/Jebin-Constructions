@@ -19,7 +19,7 @@ export default function Projects() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                 <Card hover elevation={2} className="p-0 overflow-hidden animate-slide-up group">
-                    <div className="relative h-[500px] overflow-hidden bg-gray-100">
+                    <div className="relative h-56 sm:h-80 md:h-[500px] overflow-hidden bg-gray-100">
                         <Image
                             src="/jc-verkilambi-residence-full.jpg"
                             alt="JC Verkilambi Residence"
@@ -46,7 +46,7 @@ export default function Projects() {
 
                 {/* Placeholder cards for now */}
                 <Card hover elevation={2} className="p-0 overflow-hidden animate-slide-up group" style={{ animationDelay: '0.1s' }}>
-                    <div className="relative h-[500px] overflow-hidden bg-gray-100">
+                    <div className="relative h-56 sm:h-80 md:h-[500px] overflow-hidden bg-gray-100">
                         <Image
                             src="/jc-mekkamandapam-residence.jpg"
                             alt="JC Mekkamandapam Residence"
@@ -72,7 +72,7 @@ export default function Projects() {
                 </Card>
 
                 <Card hover elevation={2} className="p-0 overflow-hidden animate-slide-up group" style={{ animationDelay: '0.2s' }}>
-                    <div className="relative h-[500px] overflow-hidden bg-gray-100">
+                    <div className="relative h-56 sm:h-80 md:h-[500px] overflow-hidden bg-gray-100">
                         <Image
                             src="/kanyakumari-site.jpg"
                             alt="Ongoing site plan"
@@ -98,7 +98,7 @@ export default function Projects() {
                 </Card>
 
                 <Card hover elevation={2} className="p-0 overflow-hidden animate-slide-up group" style={{ animationDelay: '0.3s' }}>
-                    <div className="relative h-[500px] overflow-hidden bg-gray-100">
+                    <div className="relative h-56 sm:h-80 md:h-[500px] overflow-hidden bg-gray-100">
                         <Image
                             src="/jc-kanyakumari-completed.jpg"
                             alt="JC Kanyakumari Residence"

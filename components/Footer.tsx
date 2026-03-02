@@ -37,7 +37,7 @@ export const Footer: React.FC = () => {
             </div>
           </div>
           <div>
-            <h4 className="font-semibold mb-4 text-text-primary">Quick Links</h4>
+            <h4 className="font-semibold mb-4 text-primary">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/" className="text-text-secondary hover:text-primary transition-colors">
@@ -67,7 +67,7 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold mb-4 text-text-primary">Services</h4>
+            <h4 className="font-semibold mb-4 text-primary">Services</h4>
             <ul className="space-y-2 text-sm text-text-secondary">
               <li>Commercial Construction</li>
               <li>Residential Building</li>
@@ -81,7 +81,7 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold mb-4 text-text-primary">Contact Us</h4>
+            <h4 className="font-semibold mb-4 text-primary">Contact Us</h4>
             <div className="space-y-4 text-sm text-text-secondary">
               <div>
                 <p className="font-medium text-text-primary">Mobile</p>

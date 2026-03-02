@@ -13,22 +13,21 @@ export default function Home() {
       {/* Hero Section with Animation */}
       <section className="relative">
         <ConstructionAnimation />
-        <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30">
-          <div className="text-center text-white px-4 animate-fade-in">
-            <h1 className="text-3xl md:text-4xl font-heading font-bold mb-4 drop-shadow-lg">
-              Building Dreams
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 drop-shadow-md">
-              Modern Construction Solutions for Tomorrow
-            </p>
-            <a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-primary hover:bg-primary-dark text-white shadow-elevation-4 font-heading">
-                Register Now
-              </Button>
-            </a>
-          </div>
-        </div>
       </section>
+
+      {/* Register Button — directly below animation */}
+      <section className="w-full bg-gradient-to-b from-[#1a2e4a] to-[#0f172a] py-8 flex flex-col items-center gap-3">
+        <p className="text-white text-sm opacity-70 tracking-widest uppercase font-medium">Start your project today</p>
+        <a href={GOOGLE_FORM_URL} target="_blank" rel="noopener noreferrer">
+          <Button
+            size="lg"
+            className="bg-primary hover:bg-primary-dark text-white shadow-elevation-4 font-heading text-lg px-10 py-4 animate-pulse"
+          >
+            Register Now
+          </Button>
+        </a>
+      </section>
+
 
       {/* Features Section */}
       <section className="container mx-auto px-4 py-16">
@@ -98,7 +97,7 @@ export default function Home() {
         </div>
 
         {/* CTA Section */}
-        <div className="bg-bg-secondary rounded-lg p-12 text-center animate-fade-in">
+        <div className="bg-bg-secondary rounded-lg px-4 py-10 sm:p-12 text-center animate-fade-in">
           <h2 className="text-2xl md:text-3xl font-heading font-bold mb-2 text-primary">
             Our Services Across Tamilnadu
           </h2>
@@ -122,7 +121,7 @@ export default function Home() {
         {/* CEO Section */}
         {/* Founder Section - Displaying First */}
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 justify-center">
-          <div className="w-64 h-64 relative flex-shrink-0 animate-slide-up">
+          <div className="w-40 h-40 sm:w-64 sm:h-64 relative flex-shrink-0 animate-slide-up">
             <Image
               src="/justin-c.png"
               alt="Justin C - Founder"
@@ -142,7 +141,7 @@ export default function Home() {
 
         {/* CEO Section - Displaying Second */}
         <div className="flex flex-col md:flex-row-reverse items-center gap-8 md:gap-16 justify-center">
-          <div className="w-64 h-64 relative flex-shrink-0 animate-slide-up">
+          <div className="w-40 h-40 sm:w-64 sm:h-64 relative flex-shrink-0 animate-slide-up">
             <Image
               src="/jebin-raj.jpg"
               alt="Jebin Raj J - CEO"
