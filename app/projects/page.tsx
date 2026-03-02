@@ -74,7 +74,7 @@ export default function Projects() {
                                     alt={p.title}
                                     width={800}
                                     height={600}
-                                    className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105"
+                                    className="w-full max-h-64 object-contain transition-transform duration-700 group-hover:scale-105"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
                                 {/* Overlay location on hover */}
